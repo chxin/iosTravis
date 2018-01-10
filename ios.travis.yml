@@ -1,13 +1,13 @@
 language: objective-c
-sudo: required
-#xcode_project: ios/Rock.xcodeproj # path to your xcodeproj folder
-#xcode_scheme: Rock_Test
-install: #1.2
-#  - rmdir node_modules
+install:
   - npm install
-#cache:
-# directories:
-#  - node_modules
+before_script:
+  - chmod +x ./ios/RockCer/add-key.sh
+  - cd ./ios/RockCer
+  - ./add-key.sh
+  - cd -
 script:
-  - cd ios
-  - xctool -project Rock.xcodeproj -scheme Rock_Test clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+  - xcodebuild -project "./ios/FunkRock.xcodeproj" -scheme "FunkRock_Test" archive -archivePath "./buildIOSTemp/FunkRock_Test.xcarchive" -quiet
+  - xcodebuild -exportArchive -archivePath "./buildIOSTemp/FunkRock_Test.xcarchive" -exportPath "./buildIOSTemp/FunkRock_Test" -exportOptionsPlist "exportTestOptions.plist" -quiet
+  - cd ./buildIOSTemp && ls -R
+  # - curl

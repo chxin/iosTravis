@@ -9,5 +9,5 @@ before_script:
 script:
   - xcodebuild -project "./ios/FunkRock.xcodeproj" -scheme "FunkRock_Test" archive -archivePath "./buildIOSTemp/FunkRock_Test.xcarchive" -quiet
   - xcodebuild -exportArchive -archivePath "./buildIOSTemp/FunkRock_Test.xcarchive" -exportPath "./buildIOSTemp/FunkRock_Test" -exportOptionsPlist "exportTestOptions.plist" -quiet
-  - cd .buildIOSTemp && ls -R
+  - cd ./buildIOSTemp && ls -R
   # - curl
