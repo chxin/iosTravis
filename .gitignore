@@ -5,6 +5,8 @@
 # Xcode
 #
 build/
+buildTemp/
+buildIOSTemp/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -32,6 +34,7 @@ local.properties
 # node.js
 #
 node_modules/
+package-lock.json
 npm-debug.log
 
 # BUCK

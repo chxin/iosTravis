@@ -15,11 +15,11 @@
 	<key>CFBundleName</key>
 	<string>变频顾问</string>
 	<key>Bundle identifier</key>
-	<string>cn.com.schneider-electric.FunkDisco</string>
+	<string>cn.com.schneider-electric.EDisco</string>
 	<key>Bundle name</key>
 	<string>变频顾问</string>
 	<key>CFBundleIdentifier</key>
-	<string>cn.com.schneider-electric.FunkDisco</string>
+	<string>cn.com.schneider-electric.EDisco</string>
 	<key>UpgradeUri</key>
 	<string>https://da.energymost.com/download-app</string>
 </dict>

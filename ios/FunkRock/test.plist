@@ -12,10 +12,14 @@
 	<string>sejazz-test.images.energymost.com</string>
 	<key>URI</key>
 	<string></string>
+	<key>Bundle identifier</key>
+	<string>cn.com.schneider-electric.EDisco</string>
+	<key>Bundle name</key>
+	<string>变频顾问</string>
 	<key>CFBundleName</key>
 	<string>FunkRock_Test</string>
 	<key>CFBundleIdentifier</key>
-	<string>cn.com.schneider-electric.FunkRock</string>
+	<string>cn.com.schneider-electric.EDisco</string>
 	<key>UpgradeUri</key>
 	<string>https://sp1.fm.energymost.com/download-app</string>
 </dict>

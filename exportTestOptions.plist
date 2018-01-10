@@ -2,15 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>teamID</key>
-	<string>46REERL7A3</string>
+	<key>compileBitcode</key>
+	<true/>
 	<key>method</key>
 	<string>ad-hoc</string>
-	<key>uploadBitcode</key>
-	<false/>
-	<key>uploadSymbols</key>
-	<false/>
-	<key>compileBitcode</key>
-	<false/>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>cn.com.schneider-electric.EDisco</key>
+		<string>hocEDisco</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>iPhone Distribution</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>stripSwiftSymbols</key>
+	<true/>
+	<key>teamID</key>
+	<string>F3A8R3FAA7</string>
+	<key>thinning</key>
+	<string>&lt;thin-for-all-variants&gt;</string>
 </dict>
 </plist>

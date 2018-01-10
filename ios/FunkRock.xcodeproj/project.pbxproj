@@ -869,7 +869,7 @@
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 46REERL7A3;
+						DevelopmentTeam = F3A8R3FAA7;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -1317,11 +1317,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jinhao Geng (2WZ4ZXY334)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jinhao Geng (2WZ4ZXY334)";
+				CODE_SIGN_IDENTITY = "Apple Code Signing Certification Authority";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				CODE_SIGN_STYLE = Manual;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 46REERL7A3;
+				DEVELOPMENT_TEAM = F3A8R3FAA7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1355,10 +1356,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.com.schneider-electric.FunkRock";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.com.schneider-electric.EDisco";
 				PRODUCT_NAME = FunkRock;
-				PROVISIONING_PROFILE = "077db96f-331e-4949-8304-319bf0c4e5ee";
-				PROVISIONING_PROFILE_SPECIFIER = FunkRockDev;
+				PROVISIONING_PROFILE = "5d974327-d117-434d-a602-f5542232a0a2";
+				PROVISIONING_PROFILE_SPECIFIER = hocEDisco;
 			};
 			name = Debug;
 		};
@@ -1369,10 +1370,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jinhao Geng (2WZ4ZXY334)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jinhao Geng (2WZ4ZXY334)";
+				CODE_SIGN_IDENTITY = "Apple Code Signing Certification Authority";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
-				DEVELOPMENT_TEAM = 46REERL7A3;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F3A8R3FAA7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1406,10 +1408,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.com.schneider-electric.FunkRock";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.com.schneider-electric.EDisco";
 				PRODUCT_NAME = FunkRock;
-				PROVISIONING_PROFILE = "077db96f-331e-4949-8304-319bf0c4e5ee";
-				PROVISIONING_PROFILE_SPECIFIER = FunkRockDev;
+				PROVISIONING_PROFILE = "5d974327-d117-434d-a602-f5542232a0a2";
+				PROVISIONING_PROFILE_SPECIFIER = hocEDisco;
 			};
 			name = Release;
 		};

@@ -75,7 +75,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "/usr/libexec/PlistBuddy -c &quot;Set :CFBundleIdentifier cn.com.schneider-electric.FunkRock&quot;  &quot;${TARGET_BUILD_DIR}/${INFOPLIST_PATH}&quot;&#10;/usr/libexec/PlistBuddy -c &quot;Merge ${SRCROOT}/Rock/test.plist&quot; &quot;${TARGET_BUILD_DIR}/${INFOPLIST_PATH}&quot;&#10;">
+               scriptText = "/usr/libexec/PlistBuddy -c &quot;Set :CFBundleIdentifier cn.com.schneider-electric.EDisco&quot;  &quot;${TARGET_BUILD_DIR}/${INFOPLIST_PATH}&quot;&#10;/usr/libexec/PlistBuddy -c &quot;Merge ${SRCROOT}/Rock/test.plist&quot; &quot;${TARGET_BUILD_DIR}/${INFOPLIST_PATH}&quot;&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -129,7 +129,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "/usr/libexec/PlistBuddy -c &quot;Set :CFBundleIdentifier cn.com.schneider-electric.FunkRock&quot;  &quot;${TARGET_BUILD_DIR}/${INFOPLIST_PATH}&quot;&#10;/usr/libexec/PlistBuddy -c &quot;Merge ${SRCROOT}/FunkRock/test.plist&quot; &quot;${TARGET_BUILD_DIR}/${INFOPLIST_PATH}&quot;">
+               scriptText = "/usr/libexec/PlistBuddy -c &quot;Set :CFBundleIdentifier cn.com.schneider-electric.EDisco&quot;  &quot;${TARGET_BUILD_DIR}/${INFOPLIST_PATH}&quot;&#10;/usr/libexec/PlistBuddy -c &quot;Merge ${SRCROOT}/FunkRock/test.plist&quot; &quot;${TARGET_BUILD_DIR}/${INFOPLIST_PATH}&quot;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"

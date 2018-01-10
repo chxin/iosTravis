@@ -1,26 +1,13 @@
-language: android
-sudo: required
-before_install: #1.1
-  - nvm install 6
-  - node --version
-install: #1.2
+language: objective-c
+install:
   - npm install
-android: #1.3
-  components:
-  - build-tools-23.0.1
-  - android-23
-  - extra-android-m2repository
-  - extra-google-google_play_services
-  - extra-google-m2repository
-  - addon-google_apis-google-16
-cache:
-  directories:
-  - node_modules
-script: 
-#  - npm run ci #2
-  - cd android && ./gradlew clean
-  - ./gradlew assembleRelease #3
-  - cd ./app/build/outputs/apk
-  - ls
-  - curl -F 'file=@app-internal-release-5.1.10.apk' -F 'uKey=24af41e3b5e5117e773a733378aefa29' -F '_api_key=0691c7489e57a5158796f6e1e7e988bd' -F 'password=rock' -F 'installType=2' -F 'updateDescription=5.1.10 test' 'https://qiniu-storage.pgyer.com/apiv1/app/upload'
-  - curl -F 'file=@app-prod-release-5.1.10.apk' -F 'uKey=24af41e3b5e5117e773a733378aefa29' -F '_api_key=0691c7489e57a5158796f6e1e7e988bd' -F 'password=rock' -F 'installType=2' -F 'updateDescription=5.1.10 prod' 'https://qiniu-storage.pgyer.com/apiv1/app/upload'
+before_script:
+  - chmod +x ./ios/RockCer/add-key.sh
+  - cd ./ios/RockCer
+  - ./add-key.sh
+  - cd -
+script:
+  - xcodebuild -project "./ios/FunkRock.xcodeproj" -scheme "FunkRock_Test" archive -archivePath "./buildIOSTemp/FunkRock_Test.xcarchive" -quiet
+  - xcodebuild -exportArchive -archivePath "./buildIOSTemp/FunkRock_Test.xcarchive" -exportPath "./buildIOSTemp/FunkRock_Test" -exportOptionsPlist "exportTestOptions.plist" -quiet
+  - cd .buildIOSTemp && ls -R
+  # - curl
