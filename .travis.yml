@@ -7,7 +7,11 @@ before_script:
   - ./add-key.sh
   - cd -
 script:
-  - xcodebuild -project "./ios/FunkRock.xcodeproj" -scheme "FunkRock_Test" archive -archivePath "./buildIOSTemp/FunkRock_Test.xcarchive" -quiet
-  - xcodebuild -exportArchive -archivePath "./buildIOSTemp/FunkRock_Test.xcarchive" -exportPath "./buildIOSTemp/FunkRock_Test" -exportOptionsPlist "exportTestOptions.plist" -quiet
+  - xcodebuild -project "./ios/FunkRock.xcodeproj" -scheme "FunkRock_Test" archive -archivePath "./buildIOSTemp/FunkRock_Test.xcarchive"
+  - xcodebuild -exportArchive -archivePath "./buildIOSTemp/FunkRock_Test.xcarchive" -exportPath "./buildIOSTemp/FunkRock_Test" -exportOptionsPlist "exportTestOptions.plist"
+  # - xcodebuild -project "./ios/FunkRock.xcodeproj" -scheme "FunkRock_Test" archive -archivePath "./buildIOSTemp/FunkRock_Test.xcarchive" CODE_SIGN_IDENTITY="iPhone Distribution:Beijing Novatin Information Technology Co., Ltd. (F3A8R3FAA7)" PROVISIONING_PROFILE="~/Library/MobileDevice/Provisioning Profiles/hocEDisco.mobileprovision" -quiet
+  # - xcodebuild -exportArchive -archivePath "./buildIOSTemp/FunkRock_Test.xcarchive" -exportPath "./buildIOSTemp/FunkRock_Test" -exportOptionsPlist "exportTestOptions.plist" CODE_SIGN_IDENTITY="iPhone Distribution:Beijing Novatin Information Technology Co., Ltd. (F3A8R3FAA7)" PROVISIONING_PROFILE="~/Library/MobileDevice/Provisioning Profiles/hocEDisco.mobileprovision" -quiet
+  # - xctool -project "./ios/FunkRock.xcodeproj" -scheme "FunkRock_Test" -sdk iphoneos -configuration Release OBJROOT=./buildIOSTemp SYMROOT=./buildIOSTemp ONLY_ACTIVE_ARCH=NO CODE_SIGN_RESOURCE_RULES_PATH=./exportTestOptions.plist
+  # - xcrun -log -sdk iphoneos PackageApplication "./buildIOSTemp/Release-iphoneos/FunkRock.app" -o "./buildIOSTemp/Release-iphoneos/FunkRock.ipa" -sign "iPhone Distribution:Beijing Novatin Information Technology Co., Ltd. (F3A8R3FAA7)" -embed "~/Library/MobileDevice/Provisioning Profiles/hocEDisco.mobileprovision"
   - cd ./buildIOSTemp && ls -R
   # - curl
